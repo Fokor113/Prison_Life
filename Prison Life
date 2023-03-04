@@ -4,26 +4,7 @@ if game.PlaceId == 155615604 then
     local Gun = Window:NewTab("Gun")
     local GunSection = Gun:NewSection("Gun")
   
-    GunSection:NewButton("Get Pistol", "Get the M9 Weapon in your inventory.", function()
-        local args = {
-            [1] = workspace.Prison_ITEMS.giver.M9.ITEMPICKUP
-        }
-        
-        workspace.Remote.ItemHandler:InvokeServer(unpack(args))
-        
-
-
-    end)
-
-
-
-    GunSection:NewButton("Get Pistol", "Get the M9 Weapon in your inventory.", function()
-        local args = {
-            [1] = workspace.Prison_ITEMS.giver.M9.ITEMPICKUP
-        }
-        
-        workspace.Remote.ItemHandler:InvokeServer(unpack(args))
-    end)
+    
 
 
     GunSection:NewButton("Get Ak-47", "Get the Ak-47 Weapon in your inventory.", function()
@@ -34,14 +15,7 @@ if game.PlaceId == 155615604 then
         workspace.Remote.ItemHandler:InvokeServer(unpack(args))
     end)
 
-
-    GunSection:NewButton("Get M4A1", "You need the Riot Police gamepass.", function()
-        local args = {
-            [1] = workspace.Prison_ITEMS.giver.M4A1.ITEMPICKUP
-        }
-        
-        workspace.Remote.ItemHandler:InvokeServer(unpack(args))
-    end)
+    
 
     GunSection:NewDropdown("Gun Mod", "Makes the gun really overpowered.", {"M9", "Remington 870", "AK-47", "Taser"}, function(v)
         local module = nil
