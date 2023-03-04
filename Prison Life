@@ -98,29 +98,7 @@ end)
 
 
 
-local Admin = Window:NewTab("Admin")
-    local AdminSection = Admin:NewSection("Admin")
 
-    AdminSection:NewButton("Inf Yield", "Nice FE admin script.", function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-    end)
-
-    AdminSection:NewButton("Fates Admin", "One of the best FE admin scripts.", function()
-        loadst
-        loadring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))()
-    end)
-
-    local Useful = Window:NewTab("Useful")
-    local UsefulSection = Team:NewSection("Useful")
-
-    UsefulSection:NewButton("DarkDex", "Allows you to see everything in the game.", function()
-        loadstring(game:HttpGet("https://gist.githubusercontent.com/DinosaurXxX/b757fe011e7e600c0873f967fe427dc2/raw/ee5324771f017073fc30e640323ac2a9b3bfc550/dark%2520dex%2520v4"))()
-    end)
-
-
-    UsefulSection:NewButton("SimpleSpy", "A musthave for making roblox exploits.", function()
-        loadstring(game:HttpGet("https://github.com/exxtremestuffs/SimpleSpySource/raw/master/SimpleSpy.lua"))()
-    end)
 
 end
 
